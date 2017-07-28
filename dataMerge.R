@@ -84,4 +84,12 @@ unlink("combinedEnrolDemographics.csv")
 
 write.csv(cleanedData, file="cleanedMergeEnrolDemo.csv", row.names=F)
 obj = File("cleanedMergeEnrolDemo.csv", parentId = PARENT_ID)
+<<<<<<< HEAD
 synStore(obj)
+=======
+synStore(obj, executed = "https://github.com/vp1801/dataMerge/blob/master/dataMerge.R", 
+         used = list("syn5720400", "syn5752777", "syn8333998", 
+                     "syn3474927", "syn4898431", "syn5706988", "syn5752774"))
+unlink("combinedEnrolDemographics.csv")
+unlink("cleanedMergeEnrolDemo.csv")
+>>>>>>> b28d448... included data table
