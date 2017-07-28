@@ -1,5 +1,14 @@
 PARENT_ID = "syn10154504"
 
+SOURCE_LIB = "~/mylibs/"
+.libPaths(SOURCE_LIB)
+
+library("data.table")
+library("dplyr")
+library("synapseClient")
+
+synapseLogin()
+
 parkinsonEnrolV1 = synTableQuery("select * from syn5720400")@values
 parkinsonEnrolV2 = synTableQuery("select * from syn5752777")@values
 parkinsonEnrolV3 = synTableQuery("select * from syn8333998")@values
